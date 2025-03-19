@@ -45,3 +45,7 @@ The script will reload the page every 10 minutes, and notify you by email if the
 - using [playwright stealth](https://pypi.org/project/playwright-stealth/) just broke all pages, but that could be one workaround
 - it would be best to implement this as a browser extension
 
+# todo
+
+- log date and time in .log file too
+- when a page has the same link twice, only report it once (concatenate the different titles)
