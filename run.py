@@ -67,7 +67,7 @@ async def main():
                 links = await get_links(page)
 
                 logger.info(f"{len(links)} links found, checking how many are new")
-                new_links=[[url,text] for [url, text] in links if url not in urls_to_ignore]
+                new_links=[[url,text.replace('\n', '')] for [url, text] in links if url not in urls_to_ignore]
 
                 logger.info(f"{len(new_links)} new links found, marking them as known")
                 with open(known_links,'a') as file:
