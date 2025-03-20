@@ -9,6 +9,7 @@ python run.py
 
 # Usage
 
+
 Install the required packages
 
 	pip install -r requirements.txt
@@ -49,3 +50,7 @@ The script will reload the page every 10 minutes, and notify you by email if the
 
 - log date and time in .log file too
 - when a page has the same link twice, only report it once (concatenate the different titles)
+- remove space inside links
+
+# Attention 
+- disable sleeping on your computer otherwise the script will stop working
