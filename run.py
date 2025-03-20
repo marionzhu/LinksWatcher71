@@ -98,7 +98,7 @@ async def main():
 
             if mail_body!="":
                 logger.info("New links found, sending email.") 
-                subject= "LinksWatcher71 : {pages_with_issues} page issue" if pages_with_issues>0 else f'LinksWatcher71 : {len(new_links)} new links found'
+                subject= f'LinksWatcher71 : {pages_with_issues} page issue' if pages_with_issues>0 else f'LinksWatcher71 : {total_new_links} new links found'
                 send_email(subject, mail_body)
             else:
                 logger.info("No new links") 
